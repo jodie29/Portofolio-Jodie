@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Simpel Jodie</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+<body class="light-theme">
+
+    <header id="main-header">
+        <nav>
+            <a href="#hero" class="logo">R. Jodie Ferdyanto Susilo</a>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <button id="theme-toggle" title="Toggle Dark/Light Mode">🌙</button>
+            </div>
+            <button id="menu-toggle" class="mobile-menu">☰</button>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="hero" class="section light-bg">
+            <div class="hero-content">
+                <img src="image/Gambar WhatsApp 2025-09-25 pukul 17.19.39_6b9a39ca.jpg" alt="Foto Profil" class="profile-img">
+                <h1>Halo, Saya <span class="highlight">R. Jodie Ferdyanto Susilo</span></h1>
+                <p class="tagline">Mahasiswa Fakultas Ilmu Komputer Universitas Jember</p>
+                <a href="#projects" class="button cta-button">Lihat Projek</a>
+            </div>
+        </section>
+        
+        <section id="about" class="section dark-bg">
+            <h2>Tentang Saya</h2>
+            <p class="section-desc">Saya adalah mahasiswa Universitas Jember, fakultas Ilmu Komputer dengan program studi Teknologi Informasi angkatan 2024. Saya mempunyai ketertarikan pada berbagai ilmu yang baru dan saya mudah berkembang secara cepat, dan saya  juga mempunyai ketertarikan pada bidang editing video. Walaupun saya mempunyai sedikit pengalaman dalam berorganisasi, tetapi saya mempunyai niat untuk terus berkembang.</p>
+            
+            <h3>Keahlian</h3>
+            <div class="skills-list">
+                <span class="skill-tag">Capcut</span>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">C#</span>
+                <span class="skill-tag">HTML</span>
+                <span class="skill-tag">CSS</span>
+                <span class="skill-tag">JavaScript</span>
+
+
+            </div>
+        </section>
+
+        <section id="projects" class="section light-bg">
+            <h2>Proyek</h2>
+            
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Semua</button>
+                <button class="filter-btn" data-filter="py">Python</button>
+                <button class="filter-btn" data-filter="c">C#</button>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card" data-category="py">
+                    <img src="image/Cuplikan layar 2024-12-05 222759.png" alt="Proyek 1">
+                    <h3>Algoritma dan Bahasa Pemrograman</h3>
+                    <p>Aplikasi pengelolaan Laboratorium bertujuan untuk mempermudah pengelolaan dalam Laboratorium</p>
+                    <a href="#" target="_blank" class="link">Demo | Source</a>
+                </div>
+                <div class="project-card" data-category="c">
+                    <img src="image/Cuplikan layar 2025-09-25 175220.png" alt="Proyek 2">
+                    <h3>Pembuatan aplikasi CANKULIN (PBO)</h3>
+                    <p>Aplikasi ini berfungsi untuk para petani sekitar yang membutuhkan barang-barang pertanian dengan sistem penyewaan</p>
+                    <a href="#" target="_blank" class="link">Demo | Source</a>
+                </div>
+                <div class="project-card" data-category="py">
+                    <img src="image/Cuplikan layar 2025-09-25 175538.png" alt="Proyek 3">
+                    <h3>Pengelolaan Data Dengan Mitra "Semacam Kopi" (BASDA)</h3>
+                    <p>Aplikasi ini berfungsi untuk usaha "semacam kopi" yg masi menggunakan sistem manual atau catatan tertulis</p>
+                    <a href="#" target="_blank" class="link">Demo | Source</a>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 R. Jodie Ferdyanto Susilo</p>
+    </footer>
+
+
+    <script src="script.js"></script> 
+</body>
+</html>
