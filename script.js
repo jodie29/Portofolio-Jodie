@@ -1,4 +1,3 @@
-// 1. TOGGLE MENU (Mobile)
 const menuToggle = document.getElementById('menu-toggle');
 const navLinks = document.querySelector('.nav-links');
 
@@ -18,20 +17,17 @@ document.querySelectorAll('.nav-links a').forEach(link => {
     });
 });
 
-
-// 2. DARK MODE TOGGLE
 const themeToggle = document.getElementById('theme-toggle');
 
-// Fungsi untuk mengatur tema dan ikon (simbol unicode)
 function setTheme(isDark) {
     if (isDark) {
         document.body.classList.replace('light-theme', 'dark-theme');
         localStorage.setItem('theme', 'dark-theme');
-        themeToggle.textContent = '☀️'; // Simbol Matahari
+        themeToggle.textContent = '☀️';
     } else {
         document.body.classList.replace('dark-theme', 'light-theme');
         localStorage.setItem('theme', 'light-theme');
-        themeToggle.textContent = '🌙'; // Simbol Bulan
+        themeToggle.textContent = '🌙';
     }
 }
 
@@ -49,10 +45,8 @@ themeToggle.addEventListener('click', () => {
 });
 
 
-// 3. PROJECT FILTERING
 document.querySelectorAll('.filter-btn').forEach(button => {
     button.addEventListener('click', function() {
-        // Atur status aktif pada tombol
         document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
         this.classList.add('active');
 
@@ -69,4 +63,5 @@ document.querySelectorAll('.filter-btn').forEach(button => {
             }
         });
     });
+
 });
